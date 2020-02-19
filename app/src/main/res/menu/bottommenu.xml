@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="@string/Beranda"
+        android:icon="@drawable/ic_compas"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tambah_menu"
+        android:title="@string/Tambah"
+        android:icon="@drawable/ic_plus_circle_outline"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profil_menu"
+        android:title="@string/Profil"
+        android:icon="@drawable/ic_user"
+        app:showAsAction="ifRoom"/>
+
+</menu>

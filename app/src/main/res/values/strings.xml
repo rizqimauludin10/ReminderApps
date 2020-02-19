@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Indah Apps</string>
+    <string name="repeat">Ayo Cek Gula Darah mu!</string>
+    <string name="Beranda">Beranda</string>
+    <string name="Tambah">Tambah</string>
+    <string name="Info">Info</string>
+    <string name="Profil">Profil</string>
+
+    <string-array name="status">
+        <item>Belum Menikah</item>
+        <item>Menikah</item>
+    </string-array>
+
+    <string-array name="pendidikan">
+        <item>Tidak Sekolah</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>Perguruan Tinggi</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>Tidak Bekerja</item>
+        <item>PNS/Pensiunan</item>
+        <item>Swasta</item>
+        <item>Petani</item>
+        <item>Buruh</item>
+        <item>Ibu Rumah Tangga</item>
+    </string-array>
+</resources>

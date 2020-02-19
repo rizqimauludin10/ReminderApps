@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="29dp"
+    tools:context=".activity.LoginActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:text="Indah Apps"
+            android:textColor="@color/colorPrimary"
+            fontPath="font/SFProText-Bold.ttf"
+            tools:ignore="MissingPrefix"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:contentDescription="null"
+            android:src="@drawable/ic_undraw_medicine_b1ol"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            android:textColor="#555555"
+            fontPath="font/SFProText-Regular.ttf"
+            tools:ignore="MissingPrefix"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cornerRadius="30dp"
+            android:layout_marginBottom="10dp"
+            app:strokeColor="@color/colorPrimary"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            fontPath="font/SFProText-Medium.ttf"
+            android:letterSpacing="-0.02"
+            app:lineHeight="12sp"
+            tools:ignore="MissingPrefix"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cornerRadius="30dp"
+            app:elevation="10dp"
+            android:text="Register"
+            android:textColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:backgroundTint="#F5F5F5"
+            app:strokeWidth="1dp"
+            app:rippleColor="@color/colorPrimary"
+            android:letterSpacing="-0.02"
+            app:lineHeight="12sp"
+            fontPath="font/SFProText-Medium.ttf"
+            tools:ignore="MissingPrefix"/>
+    </LinearLayout>
+
+</LinearLayout>

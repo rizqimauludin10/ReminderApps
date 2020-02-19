@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_undraw_healthy_options"
+        android:scaleType="centerInside"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textAllCaps="false"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:padding="20dp"
+        android:text="Fitur ini sedang dalam pengembangan, Doakan kami agar segera dapat memenuhi kebutuhan anda"
+        android:textColor="#555555"
+        fontPath="font/SFProText-Regular.ttf"
+        tools:ignore="MissingPrefix"/>
+
+</LinearLayout>
