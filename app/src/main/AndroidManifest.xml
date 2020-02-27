@@ -28,7 +28,15 @@
             android:exported="true" />-->
 
         <receiver
-            android:name=".BroadcastReminder"
+            android:name=".utils.BroadcastReminder"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".utils.BroadcastReminder2"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".utils.BroadcastReminder3"
             android:enabled="true"
             android:exported="true" />
 
