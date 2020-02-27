@@ -27,4 +27,63 @@
         <item>Buruh</item>
         <item>Ibu Rumah Tangga</item>
     </string-array>
+
+    <string name="info1">Diabetes melitus"/" kencing manis adalah gejala yang timbul pada seseorang yang mengalami meningkatan gula darah.
+        Dikatakan diabetes apabila
+        1. Kadar gula darah puasa ">" 126 mg"/"dl
+        2. Kadar gula darah sewaktu ">" 200 mg/dl
+        3. Kadar gulah darah 2 jam setelah makan ">" 200 ml"/"dl
+    </string>
+
+    <string name="info2_1">
+        a.	Mempertahankan kadar gula darah sampai normal/mendekati normal
+    </string>
+
+    <string name="info2_2">
+        b.	Memberi kecukupan energi untuk mempertahankan atau mencapai berat badan normal
+
+    </string>
+
+    <string name="info2_3">
+        c.	Menghindari atau menangani komplikasi
+
+    </string>
+
+    <string name="info2_4">
+        d.	Memberikan makanan sesuai kebutuhan
+
+    </string>
+
+    <string name="info31_1">
+        a.	Sumber karbohidrat komplek diantaranya nasi, kentang, singkong, ubi, dan sagu.
+    </string>
+    <string name="info31_2">
+        b.	Sumber protein rendah lemak. Jenis protein yang rendah lemak diantaranya adalah ikan, ayam tanpa kulit, tempe, tahu, dan kacang-kacangan
+    </string>
+    <string name="info31_3">
+        c.	Sumber lemak dalam jumlah terbatas yang di olah dengan cara dipanggang, dikukus, disetup, direbus, dan dibakar
+    </string>
+
+    <string name="info32_1">
+        1.	Mengandung banyak gula sederhana
+        Gula pasir dan gula jawa, sirup selai,, jeli, buah yang diawetkan dengan gula, susu kental manis, minuman botol ringan, dan eskrim.
+        kue-kue manis, dodol, cake dan tart
+    </string>
+
+    <string name="info32_2">
+        2.	mengandung banyak lemak, seperti cake, makan siap saji dan goreng-gorengan
+    </string>
+
+    <string name="info32_3">
+        3.	mengandung banyak natrium, seperti ikan asin, telur asin, makanan yang diawetkan, makanan yang banyak mengandung MSG.
+    </string>
+
+    <string name="info4">
+        Olahraga dapat dilakukan sebanyak (3"-"5 kali dalam seminggu selama sekitaran 30"-"45 menit dalam sehari dengan total 150 menit per minggu.
+        Olahraga yang dianjurkan
+        misalnya";" bersepeda santai, jogging, jalan cepat dan berenang (gambar)
+        Olahraga bagi penderita DM yang relatif sehat bisa tingkatkan,
+        sedangkan yang disertai kompikasi latihannya perlu dikurangi dan disesuaikan dengan masing-masing individu, dan bisa disesuaikan dengan anjuran dokter.
+    </string>
+
 </resources>

@@ -56,8 +56,8 @@ public class BroadcastReminder3 extends BroadcastReceiver {
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 19);
-        calendar.set(Calendar.MINUTE, 25);
+        calendar.set(Calendar.HOUR_OF_DAY, 17);
+        calendar.set(Calendar.MINUTE, 20);
         calendar.set(Calendar.SECOND,  1);
         if (calendar.before(Calendar.getInstance())) {
             calendar.add(Calendar.DATE, 1);

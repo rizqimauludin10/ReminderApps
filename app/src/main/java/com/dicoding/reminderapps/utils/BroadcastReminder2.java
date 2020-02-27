@@ -60,7 +60,7 @@ public class BroadcastReminder2 extends BroadcastReceiver {
 
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 19);
+        calendar.set(Calendar.HOUR_OF_DAY, 11);
         calendar.set(Calendar.MINUTE, 20);
         calendar.set(Calendar.SECOND,  1);
         if (calendar.before(Calendar.getInstance())) {

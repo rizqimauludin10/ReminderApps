@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DietDM.DM1900SoreActivity">
+
+    <include
+        layout="@layout/toolbar_dm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TableRow
+            android:background="@color/colorPrimary">
+            <TextView
+                android:text="Nama"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="Bahan"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="Berat"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="URT Hidangan"
+                android:padding="8dip"
+                android:gravity="left"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Nasi"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Beras Merah"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="75"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1 1/2 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Ayam Terik"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Ayam Fillet"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="30"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1 Ptg Kcl"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Santan"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="5"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1 Sdm"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Oseng Tempe"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Tempe"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="50"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="2 Ptg Sdg"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Minyak"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="5"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1/2 Sdm"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Sup Sayur"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Buncis"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="40"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="2/5 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text=""
+                android:padding="8dip"/>
+            <TextView
+                android:text="Wortel"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="40"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="2/5 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Sawi"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="20"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1/5 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Buah"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Jeruk Manis"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="200"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="2 Bh Sdg"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

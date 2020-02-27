@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DietDM.DM2300PagiActivity">
+
+    <include
+        layout="@layout/toolbar_dm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TableRow
+            android:background="@color/colorPrimary">
+            <TextView
+                android:text="Nama"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <TextView
+                android:text="Bahan"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="Berat"
+                android:padding="8dip"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:text="URT Hidangan"
+                android:padding="8dip"
+                android:gravity="left"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Nasi"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Beras Giling"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="50"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="3/4 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Ikan Goreng"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Ikan Segar"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="50"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="3/4 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Minyak"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="5"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1/2 Sdm"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Sup Labu Air"
+                android:gravity="center"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Labu Air"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="100"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1 Gls"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/white">
+            <TextView
+                android:text="Sari Buah"
+                android:padding="8dip"/>
+            <TextView
+                android:text="Belimbing"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="100"
+                android:gravity="center"
+                android:padding="8dip" />
+            <TextView
+                android:text="1 Bh Sdg"
+                android:gravity="center"
+                android:padding="8dip" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

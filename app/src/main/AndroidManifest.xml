@@ -12,7 +12,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DetailProfilActivity"></activity>
+        <activity android:name=".DietDM.DM2500SoreActivity"/>
+        <activity android:name=".DietDM.DM2500SiangActivity" />
+        <activity android:name=".DietDM.DM2500PagiActivity" />
+        <activity android:name=".DietDM.DM2300SoreActivity" />
+        <activity android:name=".DietDM.DM2300SiangActivity" />
+        <activity android:name=".DietDM.DM2300PagiActivity" />
+        <activity android:name=".DietDM.DM2100SoreActivity" />
+        <activity android:name=".DietDM.DM2100SiangActivity" />
+        <activity android:name=".DietDM.DM2100PagiActivity" />
+        <activity android:name=".DietDM.DM1900SoreActivity" />
+        <activity android:name=".DietDM.DM1900SiangActivity" />
+        <activity android:name=".DietDM.DM1900PagiActivity" />
+        <activity android:name=".DietDM.DM1700SoreActivity" />
+        <activity android:name=".DietDM.DM1700SiangActivity" />
+        <activity android:name=".DietDM.DM1700PagiActivity" />
+        <activity android:name=".DietDM.DM1500SoreActivity" />
+        <activity android:name=".DietDM.DM1500SiangActivity" />
+        <activity android:name=".DietDM.DM1500PagiActivity" />
+        <activity android:name=".DietDM.DM1300SoreActivity" />
+        <activity android:name=".DietDM.DM1300SiangActivity" />
+        <activity android:name=".DietDM.DM1300PagiActivity" />
+        <activity android:name=".DietDM.DM1100SoreActivity" />
+        <activity android:name=".DietDM.DM1100SiangActivity" />
+        <activity android:name=".DietDM.DM1100PagiActivity">
+        </activity>
+        <activity android:name=".Materi4Activity" />
+        <activity android:name=".Materi3Activity" />
+        <activity android:name=".Materi2Activity" />
+        <activity android:name=".MateriActivity" />
+        <activity android:name=".activity.DetailProfilActivity" />
         <activity android:name=".activity.ProfilActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
@@ -21,11 +50,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!--<service
-            android:name=".ServicesReminder"
-            android:enabled="true"
-            android:exported="true" />-->
 
         <receiver
             android:name=".utils.BroadcastReminder"
@@ -42,9 +66,7 @@
 
         <activity android:name=".Main3Activity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".activity.MainActivity">
-
-        </activity>
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

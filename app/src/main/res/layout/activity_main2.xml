@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".Main2Activity">
+
+    <include
+        layout="@layout/toolbar_dm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -16,12 +20,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Pilih berdasarkan jumlah Diet DM anda"/>
 
             <LinearLayout
+                android:id="@+id/dm1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="20dp"
                 android:background="@color/colorPrimary"
                 android:orientation="horizontal">
 
