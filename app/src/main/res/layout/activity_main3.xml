@@ -18,7 +18,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorAccent"
-        android:onClick="showBottomSheet"
+        android:onClick=""
         android:padding="8dp"
         android:text="Show BottomSheet"
         android:textColor="#fff"

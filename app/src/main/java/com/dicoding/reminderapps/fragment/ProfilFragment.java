@@ -12,13 +12,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import com.dicoding.reminderapps.SettingActivity;
 import com.dicoding.reminderapps.activity.ProfilActivity;
 import com.dicoding.reminderapps.R;
 
 public class ProfilFragment extends Fragment {
 
     private Toolbar toolbarMv;
-    private RelativeLayout pribadi;
+    private RelativeLayout pribadi, setting;
 
     @Nullable
     @Override
@@ -32,10 +33,16 @@ public class ProfilFragment extends Fragment {
 
         toolbarMv = view.findViewById(R.id.toolbarr);
         pribadi = view.findViewById(R.id.toPribadi);
+        setting = view.findViewById(R.id.toSetting);
         //setToolbarTitle("Profile");
 
         pribadi.setOnClickListener(v -> {
             Intent intent = new Intent(getContext(), ProfilActivity.class);
+            startActivity(intent);
+        });
+
+        setting.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), SettingActivity.class);
             startActivity(intent);
         });
 

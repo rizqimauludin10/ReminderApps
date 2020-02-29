@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.dicoding.reminderapps.apihelper.BaseAPIService;
+import com.dicoding.reminderapps.apihelper.UtilsAPI;
 import com.dicoding.reminderapps.utils.BroadcastReminder;
 import com.dicoding.reminderapps.fragment.AddFragment;
 import com.dicoding.reminderapps.fragment.BerandaFragment;
@@ -31,10 +33,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     final FragmentManager fm = getSupportFragmentManager();
     Fragment active = fragment1;
 
+    private BaseAPIService baseAPIService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //baseAPIService = UtilsAPI.getApiService();
 
         broadcastReminder = new BroadcastReminder();
         broadcastReminder2 = new BroadcastReminder2();
@@ -56,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         fm.beginTransaction().add(R.id.mainacv, fragment1, "1").commit();
 
 
-        //AutoStartPermissionHelper.getInstance().getAutoStartPermission(this);
+
 
     }
 

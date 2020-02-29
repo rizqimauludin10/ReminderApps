@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DietDM.DM2500SoreActivity"/>
+        <activity android:name=".Setting2Activity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".DietDM.DM2500SoreActivity" />
         <activity android:name=".DietDM.DM2500SiangActivity" />
         <activity android:name=".DietDM.DM2500PagiActivity" />
         <activity android:name=".DietDM.DM2300SoreActivity" />
@@ -35,8 +37,7 @@
         <activity android:name=".DietDM.DM1300PagiActivity" />
         <activity android:name=".DietDM.DM1100SoreActivity" />
         <activity android:name=".DietDM.DM1100SiangActivity" />
-        <activity android:name=".DietDM.DM1100PagiActivity">
-        </activity>
+        <activity android:name=".DietDM.DM1100PagiActivity" />
         <activity android:name=".Materi4Activity" />
         <activity android:name=".Materi3Activity" />
         <activity android:name=".Materi2Activity" />
@@ -65,7 +66,9 @@
             android:exported="true" />
 
         <activity android:name=".Main3Activity" />
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main2Activity">
+
+        </activity>
         <activity android:name=".activity.MainActivity" />
     </application>
 

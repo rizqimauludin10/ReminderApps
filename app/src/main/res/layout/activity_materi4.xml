@@ -49,6 +49,24 @@
                 android:textSize="14sp"
                 android:textColor="@color/text"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info4_1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info4_2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/text"/>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

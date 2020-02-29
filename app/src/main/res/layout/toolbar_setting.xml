@@ -12,7 +12,7 @@
 
 
         <ImageView
-            android:id="@+id/backMain"
+            android:id="@+id/backsetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="Materi"
+            android:text="Setting"
             android:gravity="center_horizontal"
             android:textAllCaps="false"
             android:textColor="#4F4F4F"

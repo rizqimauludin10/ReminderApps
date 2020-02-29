@@ -80,10 +80,18 @@
 
     <string name="info4">
         Olahraga dapat dilakukan sebanyak (3"-"5 kali dalam seminggu selama sekitaran 30"-"45 menit dalam sehari dengan total 150 menit per minggu.
-        Olahraga yang dianjurkan
-        misalnya";" bersepeda santai, jogging, jalan cepat dan berenang (gambar)
+        Olahraga yang dianjurkan misalnya":"
+
+    </string>
+
+    <string name="info4_1">
+        Bersepeda santai, jogging, jalan cepat dan berenang
+    </string>
+
+    <string name="info4_2">
         Olahraga bagi penderita DM yang relatif sehat bisa tingkatkan,
-        sedangkan yang disertai kompikasi latihannya perlu dikurangi dan disesuaikan dengan masing-masing individu, dan bisa disesuaikan dengan anjuran dokter.
+        sedangkan yang disertai kompikasi latihannya perlu dikurangi dan disesuaikan dengan masing-masing individu,
+        dan bisa disesuaikan dengan anjuran dokter.
     </string>
 
 </resources>
