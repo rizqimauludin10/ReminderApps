@@ -11,6 +11,9 @@ public class SharedPreferences {
     public static final String SP_Email = "spEmail";
     public static final String SP_Phone = "spPhone";
     public static final String SP_UserId = "user";
+    public static final String SP_DietDM = "diet";
+    public static final String SP_MINGGU1 = "guladarah";
+    public static final String SP_MINGGU2 = "guladarah2";
 
     public static final String SP_SudahLogin = "spSudahLogin";
 
@@ -44,6 +47,7 @@ public class SharedPreferences {
     }
 
 
+
     public String getSP_Phone() {
         return sharedPreferences.getString(SP_Phone, "");
     }
@@ -56,8 +60,20 @@ public class SharedPreferences {
         return sharedPreferences.getString(SP_Name, "");
     }
 
-    public Integer getSP_UserId() {
-        return (Integer) sharedPreferences.getInt(String.valueOf(SP_UserId), 0);
+    public String getSp_Minggu1() {
+        return sharedPreferences.getString(SP_MINGGU1, "");
+    }
+
+    public String getSp_Minggu2() {
+        return sharedPreferences.getString(SP_MINGGU2, "");
+    }
+
+    public String getSP_UserId() {
+        return sharedPreferences.getString((SP_UserId), "");
+    }
+
+    public Integer getSP_DietDM() {
+        return sharedPreferences.getInt(SP_DietDM, 0);
     }
 
     public Boolean getSPSudahLogin() {

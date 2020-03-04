@@ -4,30 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="20dp">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/ic_undraw_empty"
-        android:scaleType="centerInside"
-        android:layout_marginTop="100dp"
-        android:layout_gravity="center_horizontal"
-        />
-
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:textAllCaps="false"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:lineSpacingExtra="6sp"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:padding="20dp"
-        android:text="Fitur ini sedang dalam pengembangan, Doakan kami agar segera dapat memenuhi kebutuhan anda"
-        android:textColor="#555555"
-        fontPath="font/SFProText-Regular.ttf"
-        tools:ignore="MissingPrefix"/>
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="@color/background">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Diet"
+            android:textAllCaps="false"
+            android:textColor="#4F4F4F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gula Darah Minggu Pertama"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/gd1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="12"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gula Darah Minggu Kedua"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/gd2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="12"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/diet_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="-0.02"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:cornerRadius="17dp"
+            app:lineHeight="12sp"
+            app:strokeColor="@color/colorPrimary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="-0.02"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:cornerRadius="17dp"
+            app:lineHeight="12sp"
+            app:strokeColor="@color/colorPrimary" />
+
+
+
+    </LinearLayout>
 </LinearLayout>

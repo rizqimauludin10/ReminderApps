@@ -48,11 +48,35 @@
         />
 
     <EditText
+        android:id="@+id/username_register"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/edittext"
         android:layout_marginBottom="15dp"
         android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="#828282"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:letterSpacing="-0.02"
+        android:textColor="#333333"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext"
+        android:layout_marginBottom="15dp"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
         android:textColor="#828282"
@@ -70,6 +94,7 @@
         android:layout_marginBottom="15dp"/>
 
     <EditText
+        android:id="@+id/password_register"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/edittext"
@@ -91,6 +116,7 @@
         android:layout_marginBottom="15dp"/>
 
     <EditText
+        android:id="@+id/nohp_register"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/edittext"

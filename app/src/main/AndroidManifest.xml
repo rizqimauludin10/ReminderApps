@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +14,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Setting2Activity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Setting2Activity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".DietDM.DM2500SoreActivity" />
         <activity android:name=".DietDM.DM2500SiangActivity" />
@@ -45,11 +56,7 @@
         <activity android:name=".activity.DetailProfilActivity" />
         <activity android:name=".activity.ProfilActivity" />
         <activity android:name=".activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <receiver
@@ -66,9 +73,7 @@
             android:exported="true" />
 
         <activity android:name=".Main3Activity" />
-        <activity android:name=".Main2Activity">
-
-        </activity>
+        <activity android:name=".Main2Activity"></activity>
         <activity android:name=".activity.MainActivity" />
     </application>
 

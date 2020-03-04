@@ -12,7 +12,7 @@
 
 
         <ImageView
-            android:id="@+id/backMain"
+            android:id="@+id/backMain2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -24,10 +24,11 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="Menu Makanan"
-            android:textAllCaps="false"
             android:gravity="center_horizontal"
-            android:textColor="@color/colorPrimary"
-            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="#4F4F4F"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:layout_alignParentStart="true"
             />
 

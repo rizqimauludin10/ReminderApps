@@ -19,6 +19,9 @@ import java.util.Calendar;
 
 public class BroadcastReminder extends BroadcastReceiver {
     private static final int NOTIF_ID_REPEATING = 101;
+    private SharedPreferences sharedPreferences;
+    //Context context;
+    Integer dietDM;
 
     public BroadcastReminder() {
 
@@ -26,7 +29,9 @@ public class BroadcastReminder extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        String message = context.getString(R.string.repeat);
+        sharedPreferences = new SharedPreferences(context);
+        dietDM = sharedPreferences.getSP_DietDM();
+        String message = "DM anda"+" "+dietDM+" "+"Cek Menu Diet Hari ini!";
         String title = context.getString(R.string.app_name);
         showAlarmNotification(context, title, message, NOTIF_ID_REPEATING);
 
@@ -41,6 +46,8 @@ public class BroadcastReminder extends BroadcastReceiver {
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle(title)
                 .setContentText(message)
+                /*.setStyle(new NotificationCompat.BigTextStyle()
+                .bigText(message))*/
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent)
                 .setColor(ContextCompat.getColor(context, android.R.color.transparent))

@@ -50,6 +50,7 @@
         />
 
     <EditText
+        android:id="@+id/username_login"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/edittext"
@@ -72,8 +73,9 @@
         android:layout_marginBottom="15dp"/>
 
     <EditText
+        android:id="@+id/password_login"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="@dimen/_35sdp"
         android:background="@drawable/edittext"
         android:layout_marginBottom="15dp"
         android:hint="*******"

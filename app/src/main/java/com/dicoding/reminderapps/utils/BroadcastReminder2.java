@@ -20,13 +20,18 @@ import java.util.Calendar;
 public class BroadcastReminder2 extends BroadcastReceiver {
     private static final int NOTIF_ID_REPEATING = 102;
     private static int notifId;
+    private SharedPreferences sharedPreferences;
+    //Context context;
+    Integer dietDM;
 
     public BroadcastReminder2() {
     }
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        String message = "Notif ke 2";
+        sharedPreferences = new SharedPreferences(context);
+        dietDM = sharedPreferences.getSP_DietDM();
+        String message = "DM anda"+" "+dietDM+" "+"Cek Menu Diet Hari ini!";
         String title = context.getString(R.string.app_name);
         showAlarmNotification(context, title, message, NOTIF_ID_REPEATING);
     }

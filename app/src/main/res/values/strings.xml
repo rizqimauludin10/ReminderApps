@@ -11,6 +11,13 @@
         <item>Menikah</item>
     </string-array>
 
+    <string-array name="aktivitas">
+        <item>Sangat Ringan</item>
+        <item>Ringan</item>
+        <item>Sedang</item>
+        <item>Berat</item>
+    </string-array>
+
     <string-array name="pendidikan">
         <item>Tidak Sekolah</item>
         <item>SD</item>

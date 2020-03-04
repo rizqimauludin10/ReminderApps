@@ -3,11 +3,13 @@ package com.dicoding.reminderapps.fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,8 +20,14 @@ import com.dicoding.reminderapps.Materi3Activity;
 import com.dicoding.reminderapps.Materi4Activity;
 import com.dicoding.reminderapps.MateriActivity;
 import com.dicoding.reminderapps.R;
+import com.dicoding.reminderapps.utils.SharedPreferences;
+
+import java.util.Objects;
 
 public class BerandaFragment extends Fragment {
+    SharedPreferences sharedPreferences;
+    TextView mainName;
+    String id;
 
     @Nullable
     @Override
@@ -31,11 +39,17 @@ public class BerandaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        sharedPreferences = new SharedPreferences(Objects.requireNonNull(getContext()));
         ImageView wa = view.findViewById(R.id.wa);
         LinearLayout info1 = view.findViewById(R.id.info1);
         LinearLayout info2 = view.findViewById(R.id.info2);
         LinearLayout info3 = view.findViewById(R.id.info3);
         LinearLayout info4 = view.findViewById(R.id.info4);
+        mainName = view.findViewById(R.id.mainName);
+
+        mainName.setText(sharedPreferences.getSp_Name());
+        id = sharedPreferences.getSP_UserId();
+        Log.e("debug", "Shared Preference UserId> " + id);
         info1.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), MateriActivity.class);
             startActivity(intent);

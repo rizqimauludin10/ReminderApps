@@ -16,7 +16,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Profile"
+                android:text="Profil Saya"
                 android:textAllCaps="false"
                 android:textColor="#4F4F4F"
                 android:textSize="18sp"
@@ -146,6 +146,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/keluar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp">
