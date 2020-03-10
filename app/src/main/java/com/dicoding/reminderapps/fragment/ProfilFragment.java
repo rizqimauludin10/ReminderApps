@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +26,7 @@ public class ProfilFragment extends Fragment {
     private Toolbar toolbarMv;
     private RelativeLayout pribadi, setting, keluar;
     SharedPreferences sharedPreferences;
+    private TextView profilName, profilEmail;
 
     @Nullable
     @Override
@@ -40,7 +42,12 @@ public class ProfilFragment extends Fragment {
         pribadi = view.findViewById(R.id.toPribadi);
         setting = view.findViewById(R.id.toSetting);
         keluar = view.findViewById(R.id.keluar);
+        profilEmail = view.findViewById(R.id.myProfilName);
+        profilName = view.findViewById(R.id.myEmail);
         //setToolbarTitle("Profile");
+
+        profilEmail.setText(sharedPreferences.getSp_Email());
+        profilName.setText(sharedPreferences.getSp_Name());
 
         pribadi.setOnClickListener(v -> {
             Intent intent = new Intent(getContext(), ProfilActivity.class);
@@ -54,15 +61,18 @@ public class ProfilFragment extends Fragment {
 
         keluar.setOnClickListener(v -> {
             sharedPreferences.saveSPBoolean(SharedPreferences.SP_SudahLogin, false);
+            sharedPreferences.remove("guladarah");
+            sharedPreferences.remove("guladarah2");
+            sharedPreferences.remove("usia");
+            sharedPreferences.remove("spPhone");
+            sharedPreferences.remove("kelamin");
+            sharedPreferences.remove("lamadm");
+            sharedPreferences.remove("tinggi");
+            sharedPreferences.remove("berat");
+
             startActivity(new Intent(getContext(), SplashActivity.class)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
         });
 
     }
-
-    /*private void setToolbarTitle(String title) {
-        toolbarMv.setTitle(title);
-        toolbarMv.setTitleTextColor((ContextCompat.getColor(Objects.requireNonNull(getActivity()), R.color.text)));
-        ((MainActivity) getActivity()).setSupportActionBar(toolbarMv);
-    }*/
 }

@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.dicoding.reminderapps.Infodm;
 import com.dicoding.reminderapps.Materi2Activity;
 import com.dicoding.reminderapps.Materi3Activity;
 import com.dicoding.reminderapps.Materi4Activity;
@@ -45,6 +46,7 @@ public class BerandaFragment extends Fragment {
         LinearLayout info2 = view.findViewById(R.id.info2);
         LinearLayout info3 = view.findViewById(R.id.info3);
         LinearLayout info4 = view.findViewById(R.id.info4);
+        LinearLayout info5 = view.findViewById(R.id.info5);
         mainName = view.findViewById(R.id.mainName);
 
         mainName.setText(sharedPreferences.getSp_Name());
@@ -67,6 +69,11 @@ public class BerandaFragment extends Fragment {
 
         info4.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), Materi4Activity.class);
+            startActivity(intent);
+        });
+
+        info5.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), Infodm.class);
             startActivity(intent);
         });
 

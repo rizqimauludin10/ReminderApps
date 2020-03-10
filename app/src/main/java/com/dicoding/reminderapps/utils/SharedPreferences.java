@@ -11,9 +11,19 @@ public class SharedPreferences {
     public static final String SP_Email = "spEmail";
     public static final String SP_Phone = "spPhone";
     public static final String SP_UserId = "user";
+
+
+
+    public static final String SP_DietId = "user";
     public static final String SP_DietDM = "diet";
     public static final String SP_MINGGU1 = "guladarah";
-    public static final String SP_MINGGU2 = "guladarah2";
+    public static final String SP_MINGGU2= "guladarah2";
+    public static final String SP_USIA = "usia";
+    public static final String SP_LAMADM = "lamadm";
+    public static final String SP_TINGGI = "tinggi";
+    public static final String SP_BERAT = "berat";
+
+    public static final String SP_KELAMIN = "kelamin";
 
     public static final String SP_SudahLogin = "spSudahLogin";
 
@@ -46,6 +56,11 @@ public class SharedPreferences {
         spEditor.commit();
     }
 
+    public void remove(String keySp){
+        spEditor.remove(keySp);
+        spEditor.apply();
+    }
+
 
 
     public String getSP_Phone() {
@@ -68,8 +83,32 @@ public class SharedPreferences {
         return sharedPreferences.getString(SP_MINGGU2, "");
     }
 
+    public String getSP_DietId() {
+        return sharedPreferences.getString(SP_DietId, "");
+    }
+
     public String getSP_UserId() {
         return sharedPreferences.getString((SP_UserId), "");
+    }
+
+    public String getSP_Usia(){
+        return sharedPreferences.getString(SP_USIA, "");
+    }
+
+    public String getSP_Lamadm(){
+        return sharedPreferences.getString(SP_LAMADM, "");
+    }
+
+    public String getSP_Tinggi(){
+        return sharedPreferences.getString(SP_TINGGI, "");
+    }
+
+    public String getSP_Berat(){
+        return sharedPreferences.getString(SP_BERAT,"");
+    }
+
+    public String getSP_Kelamin(){
+        return sharedPreferences.getString(SP_KELAMIN, "");
     }
 
     public Integer getSP_DietDM() {
@@ -79,4 +118,6 @@ public class SharedPreferences {
     public Boolean getSPSudahLogin() {
         return sharedPreferences.getBoolean(SP_SudahLogin, false);
     }
+
+
 }

@@ -54,8 +54,13 @@ public class ProfilActivity extends AppCompatActivity {
     };
 
     private String[] pekerjaann = {
-            "Belum Menikah",
-            "Menikah"
+            "Tidak Bekerja",
+            "PNS/Pensiunan",
+            "Swasta",
+            "Petani",
+            "Buruh",
+            "Rumah Tangga"
+
     };
 
 
@@ -63,13 +68,14 @@ public class ProfilActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     String idUser;
     String usiaStr;
-    String namaStr, emailStr;
+    String namaStr, emailStr, noHpStr;
     String q = "update_profil";
     BaseAPIService baseAPIService;
     EditText no_hp, lamaDm, usia, tinggi, berat;
     Spinner pendidikan, status, aktivitas, pekerjaan;
     String pendidikanTampung, statusTampung, pekerjaanTampung, aktivitasTampung;
     Login loginResponse;
+    RadioGroup jk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,10 +92,13 @@ public class ProfilActivity extends AppCompatActivity {
         nama.setText(sharedPreferences.getSp_Name());
         email.setText(sharedPreferences.getSp_Email());
 
+        namaStr = nama.getText().toString();
         emailStr = email.getText().toString();
 
 
-        RadioGroup jk = findViewById(R.id.rg_jk);
+
+
+        jk = findViewById(R.id.rg_jk);
         RadioButton lk = findViewById(R.id.lk);
         RadioButton pr = findViewById(R.id.pr);
         tinggi = findViewById(R.id.tinggi);
@@ -104,6 +113,27 @@ public class ProfilActivity extends AppCompatActivity {
         Button simpan = findViewById(R.id.profile_button);
         aktivitas = findViewById(R.id.aktivitas);
 
+        if (!sharedPreferences.getSP_Phone().equals("")) {
+           no_hp.setText(sharedPreferences.getSP_Phone());
+           usia.setText(sharedPreferences.getSP_Usia());
+           lamaDm.setText(sharedPreferences.getSP_Lamadm());
+           tinggi.setText(sharedPreferences.getSP_Tinggi());
+           berat.setText(sharedPreferences.getSP_Berat());
+           if (sharedPreferences.getSP_Kelamin().equals(1)){
+               jk.setOnCheckedChangeListener((group, checkedId) -> {
+                   lk.isChecked();
+               });
+           } else if (sharedPreferences.getSP_Kelamin().equals(0)){
+               jk.setOnCheckedChangeListener((group, checkedId) -> {
+                   pr.isChecked();
+               });
+           }
+        }
+
+
+
+        noHpStr = no_hp.getText().toString();
+
         ImageView back = findViewById(R.id.backProfile);
         back.setOnClickListener(v -> {
             onBackPressed();
@@ -114,10 +144,11 @@ public class ProfilActivity extends AppCompatActivity {
             if (lk.isChecked()) {
                 rgjkjk = "1";
                 jnsKelamin = "Laki-laki";
-
+                sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
             } else if (pr.isChecked()) {
                 rgjkjk = "0";
                 jnsKelamin = "Perempuan";
+                sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
             }
         });
 
@@ -239,15 +270,19 @@ public class ProfilActivity extends AppCompatActivity {
                     switch (position) {
                         case 0:
                             aktivitasVal = (1.30);
+                            aktivitasTampung = "Sangat Ringan";
                             break;
                         case 1:
                             aktivitasVal = (1.56);
+                            aktivitasTampung = "Ringan";
                             break;
                         case 2:
                             aktivitasVal = (1.64);
+                            aktivitasTampung = "Sedang";
                             break;
                         case 3:
                             aktivitasVal = (2.00);
+                            aktivitasTampung = "Berat";
                             break;
                     }
                 }
@@ -303,6 +338,14 @@ public class ProfilActivity extends AppCompatActivity {
     }
 
     private void update_profil() {
+
+        sharedPreferences.saveSPString(SharedPreferences.SP_Phone, no_hp.getText().toString());
+        sharedPreferences.saveSPString(SharedPreferences.SP_USIA, usia.getText().toString());
+        sharedPreferences.saveSPString(SharedPreferences.SP_LAMADM, lamaDm.getText().toString());
+        sharedPreferences.saveSPString(SharedPreferences.SP_TINGGI, tinggi.getText().toString());
+        sharedPreferences.saveSPString(SharedPreferences.SP_BERAT, berat.getText().toString());
+        Log.d("Phone" , "Phone => " + sharedPreferences.getSP_Phone());
+
         baseAPIService.update_profil(
                 q,
                 String.valueOf(idUser),
@@ -326,6 +369,9 @@ public class ProfilActivity extends AppCompatActivity {
 
                             assert response.body() != null;
                             loginResponse = response.body().getData();
+                            //Integer DietDMNilai = sharedPreferences.getSP_DietDM();
+
+
 
                             Toast.makeText(ProfilActivity.this, "Berhasil Mengupdate Data", Toast.LENGTH_SHORT).show();
 

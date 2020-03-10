@@ -15,7 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:largeHeap="true"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Infodm"></activity>
+        <activity android:name=".Infodm2500Activity" />
+        <activity android:name=".Infodm2300Activity" />
+        <activity android:name=".Infodm2100Activity" />
+        <activity android:name=".Infodm1900Activity" />
+        <activity android:name=".Infodm1700Activity" />
+        <activity android:name=".Infodm1500Activity" />
+        <activity android:name=".Infodm1300Activity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,11 +62,9 @@
         <activity android:name=".Materi3Activity" />
         <activity android:name=".Materi2Activity" />
         <activity android:name=".MateriActivity" />
-        <activity android:name=".activity.DetailProfilActivity" />
+        <activity android:name=".activity.InfoDM" />
         <activity android:name=".activity.ProfilActivity" />
-        <activity android:name=".activity.LoginActivity">
-
-        </activity>
+        <activity android:name=".activity.LoginActivity" />
 
         <receiver
             android:name=".utils.BroadcastReminder"
@@ -73,7 +80,7 @@
             android:exported="true" />
 
         <activity android:name=".Main3Activity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
         <activity android:name=".activity.MainActivity" />
     </application>
 

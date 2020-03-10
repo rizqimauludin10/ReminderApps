@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Infodm2300Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/dm7back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_back_outline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:textAllCaps="false"
+            android:textColor="#4F4F4F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senin"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/senin2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selasa"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/selasa2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rabu"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rabu2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kamis"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kamis2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumat"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/jumat2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sabtu"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sabtu2300" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minggu"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#4F4F4F"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/minggu2300" />
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

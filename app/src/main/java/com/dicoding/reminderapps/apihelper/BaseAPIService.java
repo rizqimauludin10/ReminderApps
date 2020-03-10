@@ -1,5 +1,6 @@
 package com.dicoding.reminderapps.apihelper;
 
+import com.dicoding.reminderapps.model.DietResponse;
 import com.dicoding.reminderapps.model.Login;
 import com.dicoding.reminderapps.model.LoginResponse;
 
@@ -50,10 +51,18 @@ public interface BaseAPIService {
 
     @FormUrlEncoded
     @POST("reminder_api.php")
-    Call<LoginResponse> add_diet(
+    Call<DietResponse> add_diet(
             @Field("q") String q,
             @Field("id_user") String id_user,
             @Field("minggu1") String minggu1
+    );
+
+    @FormUrlEncoded
+    @POST("reminder_api.php")
+    Call<DietResponse> update_diet(
+            @Field("q") String q,
+            @Field("id_diet") String id_diet,
+            @Field("minggu2") String minggu2
     );
 
 
