@@ -44,10 +44,12 @@ public class ProfilFragment extends Fragment {
         keluar = view.findViewById(R.id.keluar);
         profilEmail = view.findViewById(R.id.myProfilName);
         profilName = view.findViewById(R.id.myEmail);
+
         //setToolbarTitle("Profile");
 
         profilEmail.setText(sharedPreferences.getSp_Email());
         profilName.setText(sharedPreferences.getSp_Name());
+
 
         pribadi.setOnClickListener(v -> {
             Intent intent = new Intent(getContext(), ProfilActivity.class);
@@ -69,6 +71,7 @@ public class ProfilFragment extends Fragment {
             sharedPreferences.remove("lamadm");
             sharedPreferences.remove("tinggi");
             sharedPreferences.remove("berat");
+            sharedPreferences.remove("diet");
 
             startActivity(new Intent(getContext(), SplashActivity.class)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));

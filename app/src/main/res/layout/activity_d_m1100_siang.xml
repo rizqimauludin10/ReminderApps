@@ -16,30 +16,30 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp">
+        android:padding="@dimen/_8sdp">
 
         <TableRow
             android:background="@color/colorPrimary">
             <TextView
                 android:text="Nama"
-                android:padding="8dip"
+                android:padding="@dimen/_8sdp"
                 android:gravity="center"
                 android:textColor="@color/white"/>
             <TextView
                 android:text="Bahan"
-                android:padding="8dip"
+                android:padding="@dimen/_8sdp"
                 android:gravity="center"
                 android:textColor="@color/white" />
 
             <TextView
                 android:text="Berat"
-                android:padding="8dip"
+                android:padding="@dimen/_8sdp"
                 android:gravity="center"
                 android:textColor="@color/white" />
 
             <TextView
                 android:text="URT Hidangan"
-                android:padding="8dip"
+                android:padding="@dimen/_8sdp"
                 android:gravity="left"
                 android:textColor="@color/white"/>
         </TableRow>
@@ -49,19 +49,19 @@
             <TextView
                 android:text="Nasi"
                 android:gravity="center"
-                android:padding="8dip"/>
+                android:padding="@dimen/_8sdp"/>
             <TextView
                 android:text="Beras Merah"
                 android:gravity="center"
-                android:padding="8dip" />
+                android:padding="@dimen/_8sdp" />
             <TextView
                 android:text="50"
                 android:gravity="center"
-                android:padding="8dip" />
+                android:padding="@dimen/_8sdp" />
             <TextView
                 android:text="3/4 Gls"
                 android:gravity="center"
-                android:padding="8dip" />
+                android:padding="@dimen/_8sdp" />
         </TableRow>
 
         <TableRow

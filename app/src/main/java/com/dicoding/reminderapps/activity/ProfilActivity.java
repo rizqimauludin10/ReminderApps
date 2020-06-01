@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.dicoding.reminderapps.MateriActivity;
 import com.dicoding.reminderapps.R;
 import com.dicoding.reminderapps.apihelper.BaseAPIService;
 import com.dicoding.reminderapps.apihelper.UtilsAPI;
@@ -119,7 +120,7 @@ public class ProfilActivity extends AppCompatActivity {
            lamaDm.setText(sharedPreferences.getSP_Lamadm());
            tinggi.setText(sharedPreferences.getSP_Tinggi());
            berat.setText(sharedPreferences.getSP_Berat());
-           if (sharedPreferences.getSP_Kelamin().equals(1)){
+           /*if (sharedPreferences.getSP_Kelamin().equals(1)){
                jk.setOnCheckedChangeListener((group, checkedId) -> {
                    lk.isChecked();
                });
@@ -127,7 +128,7 @@ public class ProfilActivity extends AppCompatActivity {
                jk.setOnCheckedChangeListener((group, checkedId) -> {
                    pr.isChecked();
                });
-           }
+           }*/
         }
 
 
@@ -136,7 +137,9 @@ public class ProfilActivity extends AppCompatActivity {
 
         ImageView back = findViewById(R.id.backProfile);
         back.setOnClickListener(v -> {
-            onBackPressed();
+            //onBackPressed();
+            Intent intent = new Intent(this, MainActivity.class );
+            startActivity(intent);
         });
 
 
@@ -144,11 +147,11 @@ public class ProfilActivity extends AppCompatActivity {
             if (lk.isChecked()) {
                 rgjkjk = "1";
                 jnsKelamin = "Laki-laki";
-                sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
+                //sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
             } else if (pr.isChecked()) {
                 rgjkjk = "0";
                 jnsKelamin = "Perempuan";
-                sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
+                //sharedPreferences.saveSPString(SharedPreferences.SP_KELAMIN, rgjkjk);
             }
         });
 
@@ -338,7 +341,6 @@ public class ProfilActivity extends AppCompatActivity {
     }
 
     private void update_profil() {
-
         sharedPreferences.saveSPString(SharedPreferences.SP_Phone, no_hp.getText().toString());
         sharedPreferences.saveSPString(SharedPreferences.SP_USIA, usia.getText().toString());
         sharedPreferences.saveSPString(SharedPreferences.SP_LAMADM, lamaDm.getText().toString());
@@ -369,10 +371,6 @@ public class ProfilActivity extends AppCompatActivity {
 
                             assert response.body() != null;
                             loginResponse = response.body().getData();
-                            //Integer DietDMNilai = sharedPreferences.getSP_DietDM();
-
-
-
                             Toast.makeText(ProfilActivity.this, "Berhasil Mengupdate Data", Toast.LENGTH_SHORT).show();
 
                         } else if (response.body().getError().equals("true")){

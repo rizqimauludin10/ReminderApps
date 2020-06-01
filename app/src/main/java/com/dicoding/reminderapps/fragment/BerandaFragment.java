@@ -27,7 +27,7 @@ import java.util.Objects;
 
 public class BerandaFragment extends Fragment {
     SharedPreferences sharedPreferences;
-    TextView mainName;
+    TextView mainName, dietDM;
     String id;
 
     @Nullable
@@ -48,8 +48,11 @@ public class BerandaFragment extends Fragment {
         LinearLayout info4 = view.findViewById(R.id.info4);
         LinearLayout info5 = view.findViewById(R.id.info5);
         mainName = view.findViewById(R.id.mainName);
+        dietDM = view.findViewById(R.id.myDm);
 
         mainName.setText(sharedPreferences.getSp_Name());
+
+        dietDM.setText(String.valueOf(sharedPreferences.getSP_DietDM()));
         id = sharedPreferences.getSP_UserId();
         Log.e("debug", "Shared Preference UserId> " + id);
         info1.setOnClickListener(v -> {
@@ -80,7 +83,7 @@ public class BerandaFragment extends Fragment {
         wa.setOnClickListener(v -> {
             String phone = "6289629455243";
             Intent intent = new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://api.whatsapp.com/send?phone=" + phone + "&text=Saya%20perlu%20bantuan%20Admin%20IndahApps"));
+                    Uri.parse("https://api.whatsapp.com/send?phone=" + phone + "&text=Saya%20perlu%20bantuan%20Admin%20Sipen%20Diabetes"));
             startActivity(intent);
         });
     }

@@ -27,8 +27,8 @@ public class SharedPreferences {
 
     public static final String SP_SudahLogin = "spSudahLogin";
 
-   android.content.SharedPreferences sharedPreferences;
-    android.content.SharedPreferences.Editor spEditor;
+   private android.content.SharedPreferences sharedPreferences;
+    private android.content.SharedPreferences.Editor spEditor;
 
     public SharedPreferences(Context context) {
         sharedPreferences = context.getSharedPreferences(SP_Reminder, Context.MODE_PRIVATE);
